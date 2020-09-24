@@ -11,8 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });
 
 $router->post('/', 'HomeController@store');
+$router->get('/', 'HomeController@index');
